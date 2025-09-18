@@ -19,19 +19,9 @@ npm install css-vars-worker
 ## Usage
 
 ```typescript
-import initCssVarsWorker from 'css-vars-worker';
+import {cssVars} from 'css-vars-worker';
 
-const manager = initCssVarsWorker({
-  variables: {
-    '--primary-color': '#ff0000',
-    '--bg-color': '#eeeeee'
-  }
-});
-
-// Update variables later
-manager.updateVariables({
-  '--primary-color': '#00ff00'
-});
+cssVars({'--primary-color': '#ff0000', '--bg-color': '#eeeeee'});
 
 
 ```
